@@ -1,5 +1,8 @@
 package br.com.guilherme.math;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class SimpleMath {
 
 	
