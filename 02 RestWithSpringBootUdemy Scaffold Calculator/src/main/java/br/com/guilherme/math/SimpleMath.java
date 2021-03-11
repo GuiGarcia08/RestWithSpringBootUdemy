@@ -1,7 +1,7 @@
 package br.com.guilherme.math;
 
 import org.springframework.stereotype.Service;
-
+//Com Service não precisa usa 'new' só usar Autowried
 @Service
 public class SimpleMath {
 
@@ -29,4 +29,5 @@ public class SimpleMath {
 	public Double squ(Double number) {
 		return (Double) Math.sqrt(number);
 	}
+
 }
