@@ -14,7 +14,7 @@ public class PersonConverter {
 		PersonVOV2 vo = new PersonVOV2();
 		vo.setId(person.getId());
 		vo.setAddress(person.getAddress());
-		vo.setBirthDay(new Date()); // Está new Date por que não foi ajusatdo o BD
+		vo.setBirthDay(new Date()); // Está new Date por que não foi ajustado o BD
 		vo.setFirstName(person.getFirstName());
 		vo.setLastName(person.getLastName());
 		vo.setGender(person.getGender());
