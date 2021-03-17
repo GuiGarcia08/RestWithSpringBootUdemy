@@ -2,7 +2,7 @@ language: bash
 services: docker
 before_install:
   - cd 17RestWithSpringBootUdemyDocker/
-  - echo "Let's strat Maven Package!"
+  - echo "We are in the docker folder!"
 script:
   - docker-compose build
 before_deploy:
@@ -10,7 +10,7 @@ before_deploy:
 deploy:
   provider: script
   script:
-  docker push guilhermegarcia/mysql-rest-with-spring-boot-udemy;
+    docker push guilhermegarcia/mysql-rest-with-spring-boot-udemy;
     docker push guilhermegarcia/rest-with-spring-boot-udemy;
   on:
     branch: master
