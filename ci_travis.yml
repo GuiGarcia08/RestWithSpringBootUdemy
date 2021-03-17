@@ -34,4 +34,4 @@ after_success:
   - docker push $AWS_REPO:latest
   - ecs-deploy -c $CLUSTER_NAME -n $SERVICE_NAME -i $AWS_REPO:latest  
 notifications:
-  email: true
+  email: false
